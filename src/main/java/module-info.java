@@ -4,4 +4,6 @@ module jude {
     requires javafx.fxml;
     requires javafx.graphics;
     requires javafx.controls;
+    exports jude;
+    opens jude;
 }
