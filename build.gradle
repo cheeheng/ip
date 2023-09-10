@@ -16,6 +16,7 @@ plugins {
     //@@author cheeheng-reused
     //Reused from https://plugins.gradle.org/plugin/org.javamodularity.moduleplugin with minor modifications
     //Allows Gradle support with modules from Java 9 onwards
+    //Latest version as of 10 September 2023 is 1.8.12
     id 'org.javamodularity.moduleplugin' version '1.8.12'
     //@@author
 }
