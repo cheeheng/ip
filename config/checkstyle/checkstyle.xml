@@ -16,6 +16,16 @@
 
 <module name="Checker">
 
+    <!-- @@author cheeheng-reused
+    Reused from https://stackoverflow.com/questions/46495576/how-to-exclude-module-info-java-from-checkstyle-plugin-checks
+    Checkstyle has a bug with module-info.java that was found since 2020 but not fixed as of version 10.12.3
+    See https://github.com/checkstyle/checkstyle/issues/8240 for more details
+    -->
+    <module name="BeforeExecutionExclusionFileFilter">
+        <property name="fileNamePattern" value="module\-info\.java$"/>
+    </module>
+    <!-- @@author -->
+
     <module name="FileTabCharacter">
         <!-- Checks that there are no tab characters in the file. -->
     </module>
